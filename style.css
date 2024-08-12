@@ -256,3 +256,241 @@ section {
 .btn-container {
   gap: 1rem;
 }
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/*  EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: flex-start;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* PROJECTS */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53);
+  border-color: rgb(163, 163, 163) ;
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+  height: ;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+#tick {
+  display: none;
+}
+/* Define the padding as a CSS variable */
+:root {
+  --pad: 20px; /* Adjust this value to increase or decrease the padding */
+}
+
+/* Frame styles */
+.frame {
+  position: fixed;
+  z-index: 10;
+  left: var(--pad);
+  right: var(--pad);
+  top: var(--pad);
+  bottom: var(--pad);
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+/* Adjusted frame line styles */
+.frame_line {
+  position: absolute;
+  background-color: #0c0b0b; /* Color of the frame */
+  opacity: 1;
+}
+
+/* Thicker lines for visibility */
+.frame_line-left {
+  left: 0;
+  top: 0;
+  width: 3px;  /* Increase thickness */
+  height: 100%;
+}
+
+.frame_line-right {
+  right: 0;
+  top: 0;
+  width: 3px;  /* Increase thickness */
+  height: 100%;
+}
+
+.frame_line-top {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3px;  /* Increase thickness */
+}
+
+.frame_line-bottom {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;  /* Increase thickness */
+}
+/* Content Wrapper */
+.content-wrapper {
+  position: fixed;
+  top: var(--pad);
+  bottom: var(--pad);
+  left: var(--pad);
+  right: var(--pad);
+  overflow: hidden; /* Hide content that overflows the frame */
+  z-index: 5; /* Ensure it's below the frame */
+  background-color: white; /* Set the background to ensure it's visible */
+  padding: var(--pad); /* Optional padding inside the frame */
+  box-sizing: border-box; /* Ensure padding is included in the size */
+}
